@@ -1,5 +1,5 @@
 {
-  "name": "node-backend-boilerplate",
+  "name": "ninja-backend-boilerplate",
   "version": "0.0.1",
   "description": "Boilerplate code to begin a Node.js ECMA6 Restful Backend w/ Unit Testing and ESDoc",
   "private": false,
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PranavSathy/node-backend-boilerplate"
+    "url": "https://github.com/The-United-States-Of-America/ninja-backend-boilerplate"
   },
   "scripts": {
     "start": "node dist/app.js"

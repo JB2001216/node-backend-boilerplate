@@ -1,3 +1,5 @@
+import SampleRoute from './routes/sample_route'
+
 /**
  * The Router is responsible for aggregating all the various routing endpoints within the application, and serving them.
  * @example <caption>Use only once</caption>
@@ -11,11 +13,11 @@ export default class Router {
   constructor(app) {
     // Define routes here
     const routes = {
-      sample_route: require('./routes/sample_route')
+      sample_route: new SampleRoute()
     };
 
     for (let route in routes) {
-      app.use('/' + route, routes[route]);
+      app.use('/' + route, routes[route].router());
     }
   }
 }

@@ -1,8 +1,22 @@
-const express = require('express');
-const router = express.Router();
+const rtr = require('express').Router();
 
-router.get('/hello_world', (req, res) => {
-  return res.send('Hello World!');
-});
+/**
+ * SampleRoute is a sample class that serves the hello_world endpoint.
+ */
+export default class SampleRoute {
+  /**
+   * Place all routes inside the constructor, so that they will be built.
+   */
+  constructor() {
 
-module.exports = router;
+    rtr.get('/hello_world', (req, res) => {
+      return res.send('Hello World!');
+    });
+
+  }
+
+  /**
+   * Get the router instance for this class
+   */
+  router() { return rtr; }
+}
