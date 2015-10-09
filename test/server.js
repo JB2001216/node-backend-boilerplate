@@ -1,12 +1,14 @@
-const should = require('chai').should(),
-      expect = require('chai').expect(),
-      supertest = require('supertest'),
-      config = require('../dist/config'),
-      api = supertest('http://localhost:' + config.development.port);
+import chai from 'chai';
+import supertest from 'supertest';
+import config from '../src/config';
+
+const should = chai.should(),
+      expect = chai.expect(),
+      api = supertest('http://localhost:' + config.port);
 
 describe('SimpleTest', () => {
   let server;
-  beforeEach( () => server = require('../dist/app') );
+  beforeEach( () => server = require('../src/app') );
   afterEach( (done) => server.close(done) );
 
   it('should return a 200 response', (done) => {

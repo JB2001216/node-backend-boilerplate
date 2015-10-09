@@ -1,4 +1,5 @@
-const rtr = require('express').Router();
+import express from 'express';
+const rtr = express.Router();
 
 /**
  * SampleRoute is a sample class that serves the hello_world endpoint.

@@ -1,10 +1,16 @@
 import Router from './Router';
 
-const cluster = require('cluster');
+import cluster from 'cluster';
+import os from 'os';
+
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import config from './config';
 
 if (cluster.isMaster && !module.parent) {
   const exemptCores = 0;
-  const cpuCount = (require('os')).cpus().length;
+  const cpuCount = os.cpus().length;
 
   for (let i = 1; i <= cpuCount - exemptCores; i++) {
     cluster.fork(i);
@@ -12,14 +18,7 @@ if (cluster.isMaster && !module.parent) {
 
   cluster.on('exit', () => cluster.fork());
 } else {
-  const express = require('express');
-  const cors = require('cors');
-  const bodyParser = require('body-parser');
-
   const app = express();
-  const env = process.env.NODE_ENV || 'development';
-  const config = (require('./config'))[env];
-
   app.use(bodyParser.json());
   app.use(cors());
 
