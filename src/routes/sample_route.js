@@ -10,8 +10,25 @@ export default class SampleRoute {
    */
   constructor() {
 
-    rtr.get('/hello_world', (req, res) => {
-      return res.send('Hello World!');
+    /**
+     * @api {get} /sample_route/hello_word/:message Hello Echo Message
+     * @apiName HelloEcho
+     * @apiGroup Sample
+     *
+     * @apiParam {String} message Some unique message to echo with a hello.
+     * @apiSuccessExample {json} Success-Response:
+     *     HTTP/1.1 200 OK
+     *     {
+     *       "message": "Hello Person":
+     *     }
+     *
+     * @apiSuccess {Object} result JSON Object representing the client object in the database.
+     * @apiError {String} err A statement that the requested email was invalid.
+     */
+    rtr.get('/hello_world/:message', (req, res) => {
+      return res.send({
+        message: 'Hello ' + req.params.message
+      });
     });
 
   }

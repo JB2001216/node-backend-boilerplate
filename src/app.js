@@ -8,7 +8,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import config from './config';
 
-if (cluster.isMaster && !module.parent) {
+if (cluster.isMaster) {
   const exemptCores = 0;
   const cpuCount = os.cpus().length;
 
@@ -25,8 +25,5 @@ if (cluster.isMaster && !module.parent) {
   // Setup our Router
   new Router(app)
 
-  let server = app.listen(config.port);
-
-  // Export our server, so Mocha can start and stop it.
-  if(module.parent) module.exports = server;
+  app.listen(config.port);
 }

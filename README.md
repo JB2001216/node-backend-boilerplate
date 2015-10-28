@@ -11,9 +11,12 @@ The boilerplate supports all the following functionality, with the given depende
 
 * Transpiling ES6 -> ES5 - Babel.js
 * Unit Testing - Mocha.js w/ Chai.js
-* Automatic Documentation - ESDoc
+* Code Documentation - ESDoc
 * ES6 Linting - ESLint w/ babel-eslint parser
 * Build System - Gulp.js
+* API Documentation - apidoc
+* Test Coverage - Coveralls Reporting w/ Istanbul
+* Continuous Integration - Travis CI (deploy docs to gh-pages branch)
 
 ## Building
 

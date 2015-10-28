@@ -1,6 +1,6 @@
 {
   "name": "node-backend-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Boilerplate code to begin a Node.js ECMA6 Restful Backend w/ Unit Testing and ESDoc",
   "private": false,
   "engines": {
@@ -18,7 +18,9 @@
     "url": "https://github.com/PranavSathy/node-backend-boilerplate"
   },
   "scripts": {
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "travis": "(npm start &)",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha tests.js --report lcovonly -- --compilers js:babel/register --colors --reporter spec test/"
   },
   "devDependencies": {
     "babel": "^5.8.23",
@@ -26,10 +28,14 @@
     "chai": "^3.2.0",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
+    "gulp-apidoc": "^0.2.0",
     "gulp-babel": "^5.2.1",
     "gulp-esdoc": "0.0.4",
     "gulp-eslint": "^1.0.0",
-    "gulp-mocha": "^2.1.3",
-    "supertest": "^1.1.0"
+    "supertest": "^1.1.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.22",
+    "mocha-lcov-reporter": "^1.0.0",
+    "apidoc": "^0.13.1"
   }
 }
