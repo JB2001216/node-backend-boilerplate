@@ -18,6 +18,3 @@ after_success:
 env:
   global:
   - GH_REF: github.com/PranavSathy/node-backend-boilerplate.git
-
-notifications:
-  slack: team-murica:KwaWUHr5gCRzm33eJuJUvAsu
