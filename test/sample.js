@@ -8,7 +8,7 @@ const should = chai.should(),
 
 describe('SimpleTest', () => {
 
-  it('should return a 200 response', (done) => {
+  it('should return a message response', (done) => {
     api.get('/sample_route/hello_world/Person')
        .set('Accept', 'application/json')
        .expect(200)
