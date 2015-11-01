@@ -9,9 +9,7 @@
   "dependencies": {
     "body-parser": "~1.13.3",
     "cors": "~2.7.1",
-    "express": "~4.13.3",
-    "gulp": "^3.9.0",
-    "mocha": "^2.3.2"
+    "express": "~4.13.3"
   },
   "repository": {
     "type": "git",
@@ -23,19 +21,19 @@
     "test": "istanbul cover node_modules/mocha/bin/_mocha tests.js --report lcovonly -- --compilers js:babel/register --colors --reporter spec test/"
   },
   "devDependencies": {
+    "apidoc": "^0.13.1",
     "babel": "^5.8.23",
     "babel-eslint": "^4.1.3",
     "chai": "^3.2.0",
+    "codacy-coverage": "^1.1.3",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-apidoc": "^0.2.0",
     "gulp-babel": "^5.2.1",
     "gulp-esdoc": "0.0.4",
     "gulp-eslint": "^1.0.0",
-    "supertest": "^1.1.0",
-    "coveralls": "^2.11.4",
     "istanbul": "^0.3.22",
     "mocha-lcov-reporter": "^1.0.0",
-    "apidoc": "^0.13.1"
+    "supertest": "^1.1.0"
   }
 }

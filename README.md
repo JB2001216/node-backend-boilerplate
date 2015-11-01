@@ -5,6 +5,7 @@ This is a simple boilerplate Express.js RESTful backend written in pure ECMAScri
 After cloning, please run the following commands:
 
 `npm install -g gulp esdoc mocha`
+
 `npm install`
 
 The boilerplate supports all the following functionality, with the given dependencies:
