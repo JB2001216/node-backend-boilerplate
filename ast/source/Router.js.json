@@ -1,0 +1,932 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "SampleRoute",
+            "range": [
+              7,
+              18
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 18
+              }
+            }
+          },
+          "range": [
+            7,
+            18
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 18
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./routes/sample_route",
+        "raw": "'./routes/sample_route'",
+        "range": [
+          24,
+          47
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 24
+          },
+          "end": {
+            "line": 1,
+            "column": 47
+          }
+        },
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * The Router is responsible for aggregating all the various routing endpoints within the application, and serving them.\n * @example <caption>Use only once</caption>\n * new Router(app);\n ",
+            "range": [
+              49,
+              242
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "range": [
+        0,
+        243
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 0
+        }
+      }
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Router",
+          "range": [
+            264,
+            270
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 21
+            },
+            "end": {
+              "line": 8,
+              "column": 27
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "constructor",
+                "range": [
+                  438,
+                  449
+                ],
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 13
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "app",
+                    "range": [
+                      450,
+                      453
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 13,
+                        "column": 14
+                      },
+                      "end": {
+                        "line": 13,
+                        "column": 17
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "routes",
+                            "range": [
+                              493,
+                              499
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 10
+                              },
+                              "end": {
+                                "line": 15,
+                                "column": 16
+                              }
+                            }
+                          },
+                          "init": {
+                            "type": "ObjectExpression",
+                            "properties": [
+                              {
+                                "type": "Property",
+                                "key": {
+                                  "type": "Identifier",
+                                  "name": "sample_route",
+                                  "range": [
+                                    510,
+                                    522
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 16,
+                                      "column": 6
+                                    },
+                                    "end": {
+                                      "line": 16,
+                                      "column": 18
+                                    }
+                                  }
+                                },
+                                "value": {
+                                  "type": "NewExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "SampleRoute",
+                                    "range": [
+                                      528,
+                                      539
+                                    ],
+                                    "loc": {
+                                      "start": {
+                                        "line": 16,
+                                        "column": 24
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 35
+                                      }
+                                    }
+                                  },
+                                  "arguments": [],
+                                  "range": [
+                                    524,
+                                    541
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 16,
+                                      "column": 20
+                                    },
+                                    "end": {
+                                      "line": 16,
+                                      "column": 37
+                                    }
+                                  }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false,
+                                "computed": false,
+                                "range": [
+                                  510,
+                                  541
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 16,
+                                    "column": 6
+                                  },
+                                  "end": {
+                                    "line": 16,
+                                    "column": 37
+                                  }
+                                }
+                              }
+                            ],
+                            "range": [
+                              502,
+                              547
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 19
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 5
+                              }
+                            }
+                          },
+                          "range": [
+                            493,
+                            547
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 10
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 5
+                            }
+                          }
+                        }
+                      ],
+                      "kind": "const",
+                      "range": [
+                        487,
+                        548
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 17,
+                          "column": 6
+                        }
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "Line",
+                          "value": " Define routes here",
+                          "range": [
+                            461,
+                            482
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 25
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ForInStatement",
+                      "left": {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                          {
+                            "type": "VariableDeclarator",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "route",
+                              "range": [
+                                563,
+                                568
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 19,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "line": 19,
+                                  "column": 18
+                                }
+                              }
+                            },
+                            "init": null,
+                            "range": [
+                              563,
+                              568
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 18
+                              }
+                            }
+                          }
+                        ],
+                        "kind": "let",
+                        "range": [
+                          559,
+                          568
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 18
+                          }
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "routes",
+                        "range": [
+                          572,
+                          578
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 22
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 28
+                          }
+                        }
+                      },
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "app",
+                                  "range": [
+                                    588,
+                                    591
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 20,
+                                      "column": 6
+                                    },
+                                    "end": {
+                                      "line": 20,
+                                      "column": 9
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "use",
+                                  "range": [
+                                    592,
+                                    595
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 20,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "line": 20,
+                                      "column": 13
+                                    }
+                                  }
+                                },
+                                "range": [
+                                  588,
+                                  595
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 20,
+                                    "column": 6
+                                  },
+                                  "end": {
+                                    "line": 20,
+                                    "column": 13
+                                  }
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "BinaryExpression",
+                                  "operator": "+",
+                                  "left": {
+                                    "type": "Literal",
+                                    "value": "/",
+                                    "raw": "'/'",
+                                    "range": [
+                                      596,
+                                      599
+                                    ],
+                                    "loc": {
+                                      "start": {
+                                        "line": 20,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "line": 20,
+                                        "column": 17
+                                      }
+                                    }
+                                  },
+                                  "right": {
+                                    "type": "Identifier",
+                                    "name": "route",
+                                    "range": [
+                                      602,
+                                      607
+                                    ],
+                                    "loc": {
+                                      "start": {
+                                        "line": 20,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "line": 20,
+                                        "column": 25
+                                      }
+                                    }
+                                  },
+                                  "range": [
+                                    596,
+                                    607
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 20,
+                                      "column": 14
+                                    },
+                                    "end": {
+                                      "line": 20,
+                                      "column": 25
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "MemberExpression",
+                                      "computed": true,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "routes",
+                                        "range": [
+                                          609,
+                                          615
+                                        ],
+                                        "loc": {
+                                          "start": {
+                                            "line": 20,
+                                            "column": 27
+                                          },
+                                          "end": {
+                                            "line": 20,
+                                            "column": 33
+                                          }
+                                        }
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "route",
+                                        "range": [
+                                          616,
+                                          621
+                                        ],
+                                        "loc": {
+                                          "start": {
+                                            "line": 20,
+                                            "column": 34
+                                          },
+                                          "end": {
+                                            "line": 20,
+                                            "column": 39
+                                          }
+                                        }
+                                      },
+                                      "range": [
+                                        609,
+                                        622
+                                      ],
+                                      "loc": {
+                                        "start": {
+                                          "line": 20,
+                                          "column": 27
+                                        },
+                                        "end": {
+                                          "line": 20,
+                                          "column": 40
+                                        }
+                                      }
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "router",
+                                      "range": [
+                                        623,
+                                        629
+                                      ],
+                                      "loc": {
+                                        "start": {
+                                          "line": 20,
+                                          "column": 41
+                                        },
+                                        "end": {
+                                          "line": 20,
+                                          "column": 47
+                                        }
+                                      }
+                                    },
+                                    "range": [
+                                      609,
+                                      629
+                                    ],
+                                    "loc": {
+                                      "start": {
+                                        "line": 20,
+                                        "column": 27
+                                      },
+                                      "end": {
+                                        "line": 20,
+                                        "column": 47
+                                      }
+                                    }
+                                  },
+                                  "arguments": [],
+                                  "range": [
+                                    609,
+                                    631
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 20,
+                                      "column": 27
+                                    },
+                                    "end": {
+                                      "line": 20,
+                                      "column": 49
+                                    }
+                                  }
+                                }
+                              ],
+                              "range": [
+                                588,
+                                632
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 20,
+                                  "column": 6
+                                },
+                                "end": {
+                                  "line": 20,
+                                  "column": 50
+                                }
+                              }
+                            },
+                            "range": [
+                              588,
+                              633
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 20,
+                                "column": 6
+                              },
+                              "end": {
+                                "line": 20,
+                                "column": 51
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          580,
+                          639
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 30
+                          },
+                          "end": {
+                            "line": 21,
+                            "column": 5
+                          }
+                        }
+                      },
+                      "each": false,
+                      "range": [
+                        554,
+                        639
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 21,
+                          "column": 5
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    455,
+                    643
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 19
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 3
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  449,
+                  643
+                ],
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 3
+                  }
+                }
+              },
+              "kind": "constructor",
+              "computed": false,
+              "range": [
+                438,
+                643
+              ],
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 2
+                },
+                "end": {
+                  "line": 22,
+                  "column": 3
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n   * The constructor injects routes into the Express application passed in.\n   * @param {express()} app An express application, used to setup routing.\n   ",
+                  "range": [
+                    275,
+                    435
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 12,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
+              "static": false
+            }
+          ],
+          "range": [
+            271,
+            645
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 28
+            },
+            "end": {
+              "line": 23,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          258,
+          645
+        ],
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 15
+          },
+          "end": {
+            "line": 23,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * The Router is responsible for aggregating all the various routing endpoints within the application, and serving them.\n * @example <caption>Use only once</caption>\n * new Router(app);\n ",
+            "range": [
+              49,
+              242
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "range": [
+        243,
+        645
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 23,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * The Router is responsible for aggregating all the various routing endpoints within the application, and serving them.\n * @example <caption>Use only once</caption>\n * new Router(app);\n ",
+          "range": [
+            49,
+            242
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    645
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 23,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * The Router is responsible for aggregating all the various routing endpoints within the application, and serving them.\n * @example <caption>Use only once</caption>\n * new Router(app);\n ",
+      "range": [
+        49,
+        242
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n   * The constructor injects routes into the Express application passed in.\n   * @param {express()} app An express application, used to setup routing.\n   ",
+      "range": [
+        275,
+        435
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 2
+        },
+        "end": {
+          "line": 12,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "Line",
+      "value": " Define routes here",
+      "range": [
+        461,
+        482
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 4
+        },
+        "end": {
+          "line": 14,
+          "column": 25
+        }
+      }
+    }
+  ]
+}
