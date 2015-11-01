@@ -1,7 +1,6 @@
 # Node.js (4.0.0) Backend Boilerplate
 
 [![Build Status](https://travis-ci.org/PranavSathy/node-backend-boilerplate.svg?branch=master)](https://travis-ci.org/PranavSathy/node-backend-boilerplate)
-
 [![Codacy Badge](https://api.codacy.com/project/badge/6352348cf9c4411c98cd76a7a123f625)](https://www.codacy.com/app/pranav-sathy/node-backend-boilerplate)
 
 This is a simple boilerplate Express.js RESTful backend written in pure ECMAScript 6, transpiled via Babel.js until the v8 interpretter supports ECMAScript 2015 modules.
@@ -40,3 +39,10 @@ To run the example, run `npm start` in the root directory. This command will run
 * Mocha.js / Chai.js / Supertest - https://developmentnow.com/2015/02/05/make-your-node-js-api-bulletproof-how-to-test-with-mocha-chai-and-supertest/
 * Babel.js - https://babeljs.io/
 * Gulp - http://gulpjs.com/
+
+## Generated Documentation
+
+The following documentation is automatically generated for you and pushed to your GHPages branch from Travis-CI. Refer to the `deploy_docs.sh` file and the `apidoc` and `esdoc` plugins for guides.
+
+* [Code Documentation](http://pranavsathy.github.io/node-backend-boilerplate/)
+* [API Documentation](http://pranavsathy.github.io/node-backend-boilerplate/api)

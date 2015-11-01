@@ -23,7 +23,6 @@ export default class SampleRoute {
      *     }
      *
      * @apiSuccess {Object} result JSON Object representing the client object in the database.
-     * @apiError {String} err A statement that the requested email was invalid.
      */
     rtr.get('/hello_world/:message', (req, res) => {
       return res.send({
