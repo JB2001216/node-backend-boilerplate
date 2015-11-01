@@ -13,7 +13,7 @@ describe('SimpleTest', () => {
        .set('Accept', 'application/json')
        .expect(200)
        .end((err, res) => {
-         expect(res.body.message).to.equal('Hello Person');
+         expect(res.body.message, 'Sample message response:').to.equal('Hello Person');
          done();
        });
   });
