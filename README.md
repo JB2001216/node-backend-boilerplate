@@ -1,5 +1,9 @@
 # Node.js (4.0.0) Backend Boilerplate
 
+[![Build Status](https://travis-ci.org/PranavSathy/node-backend-boilerplate.svg?branch=master)](https://travis-ci.org/PranavSathy/node-backend-boilerplate)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/6352348cf9c4411c98cd76a7a123f625)](https://www.codacy.com/app/pranav-sathy/node-backend-boilerplate)
+
 This is a simple boilerplate Express.js RESTful backend written in pure ECMAScript 6, transpiled via Babel.js until the v8 interpretter supports ECMAScript 2015 modules.
 
 After cloning, please run the following commands:
@@ -16,8 +20,8 @@ The boilerplate supports all the following functionality, with the given depende
 * ES6 Linting - ESLint w/ babel-eslint parser
 * Build System - Gulp.js
 * API Documentation - apidoc
-* Test Coverage - Coveralls Reporting w/ Istanbul
 * Continuous Integration - Travis CI (deploy docs to gh-pages branch)
+* Code Quality / Coverage - Codacy w/ Istanbul
 
 ## Building
 

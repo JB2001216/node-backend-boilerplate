@@ -2,8 +2,7 @@ import chai from 'chai';
 import supertest from 'supertest';
 import config from '../src/config';
 
-const should = chai.should(),
-      expect = chai.expect,
+const expect = chai.expect,
       api = supertest('http://localhost:' + config.port);
 
 describe('SimpleTest', () => {
